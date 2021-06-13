@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EtkinlikEkleActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/etkinligiKaydet"
+            style="@style/Button2"
+            android:text="Kaydet"
+            android:layout_margin="5dp"
+            />
+        <Button
+            android:id="@+id/geriDonEtkinlik"
+            style="@style/Button2"
+            android:text="Geri Dön"
+            android:layout_margin="5dp"
+            />
+        <Button
+            android:id="@+id/etkinligeKiyafetEkle"
+            style="@style/Button2"
+            android:text="Kıyafet Ekle"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etkinliğin Türü:"
+            style="@style/etiket"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tür bilgisini giriniz"
+            android:layout_marginStart="10dp"
+            android:id="@+id/turEtkinlik"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etkinliğin Adı:"
+            style="@style/etiket"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Etkinliğin adını giriniz"
+            android:layout_marginStart="10dp"
+            android:id="@+id/adEtkinlik"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etkinliğin tarihi:"
+            style="@style/etiket"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tarih bilgisini giriniz"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tarihEtkinlik"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etkinliğin Yeri:"
+            style="@style/etiket"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Yer bilgisini giriniz"
+            android:layout_marginStart="10dp"
+            android:id="@+id/yerEtkinlik" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/etkinlikKiyafetler"/>
+
+
+</LinearLayout>

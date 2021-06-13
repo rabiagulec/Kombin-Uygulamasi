@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E3E1E1"
+    android:id="@+id/etkinlikLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Etkinliğin adı"
+        style="@style/etiket"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:id="@+id/etkinlikAdi"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Etkinliğin Türü"
+        style="@style/etiket"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:id="@+id/etkinlikTuru"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="tarihi"
+       style="@style/etiket"
+       android:layout_gravity="center"
+       android:layout_margin="5dp"
+       android:id="@+id/etkinlikTarihi"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mekan"
+        style="@style/etiket"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:id="@+id/etkinlikMekani"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:id="@+id/line"
+        android:background="#E91E63"
+        android:layout_marginTop="5dp"/>
+
+
+</LinearLayout>

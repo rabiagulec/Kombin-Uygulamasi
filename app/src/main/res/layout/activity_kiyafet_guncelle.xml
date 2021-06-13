@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KiyafetGuncelleActivity"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kıyafetin Fotosu:"
+        style="@style/etiket"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/butonstyle2"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:id="@+id/kiyafetFotoGuncelle"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kıyafetin Türü:"
+            style="@style/etiket"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tür bilgisini giriniz"
+            android:layout_marginStart="10dp"
+            android:id="@+id/turGuncelle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Renk:"
+            style="@style/etiket"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Renk bilgisini giriniz"
+            android:layout_marginStart="10dp"
+            android:id="@+id/renkGuncelle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desen:"
+            style="@style/etiket"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Desen bilgisini giriniz"
+            android:layout_marginStart="10dp"
+            android:id="@+id/desenGuncelle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat:"
+            style="@style/etiket"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Kıyafetin ücretini giirniz"
+            android:layout_marginStart="10dp"
+            android:id="@+id/ucretGuncelle"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/etiket"
+            android:text="Alınma Tarihi:" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Alınma tarihini giriniz"
+            android:id="@+id/alinmaTarihiGuncelle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/Guncelle"
+            style="@style/Button2"
+            android:text="Güncelle"
+            android:layout_margin="2dp"
+            android:layout_width="100dp"
+            />
+        <Button
+            android:id="@+id/geriDonGuncelle"
+            style="@style/Button2"
+            android:text="Geri Dön"
+            android:layout_margin="2dp"
+            android:layout_width="100dp"
+            />
+        <Button
+            android:id="@+id/kiyafetiSil"
+            style="@style/Button2"
+            android:text="Kıyafeti Sil"
+            android:layout_margin="2dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

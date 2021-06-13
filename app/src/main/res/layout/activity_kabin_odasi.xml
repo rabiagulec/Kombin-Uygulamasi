@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KabinOdasiActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kabin Odası"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/amaranth"
+        android:layout_margin="10dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#C3C1C1"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:id="@+id/basustu"
+        android:src="@drawable/foto"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#C3C1C1"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:id="@+id/surat"
+        android:src="@drawable/foto"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#C3C1C1"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:id="@+id/ustbeden"
+        android:src="@drawable/foto"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#C3C1C1"
+        android:layout_margin="5dp"
+        android:id="@+id/altbeden"
+        android:src="@drawable/foto"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="#C3C1C1"
+        android:id="@+id/ayak"
+        android:src="@drawable/foto"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/geriDonKabin"
+            style="@style/Button2"
+            android:text="Geri Dön"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/kombiniSil"
+            style="@style/Button2"
+            android:text="Kombini Sil"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
